@@ -533,7 +533,7 @@ class VMX(Device):
         self.sleep += 10
         self.image =  VMX_IMAGE                                
         self.type = 'vmx'                                       
-        self.args = ['--meshnet', '--trace']
+        self.args = ['--meshnet', '--trace', '--custom_config']
         self.constraints = {"cpu": "1", "memory": "5Gi"}
 
     def update_entry(self):
